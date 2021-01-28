@@ -1,12 +1,78 @@
+<!DOCTYPE html>
 
-<form action="/#" method="POST"> 
-    <label for="keyword">Question</label> 
-    <input type="text" name="question" placeholder="Question"> 
-    <button type="submit">Poser la question</button> 
-</form>
+<html>
+    <head>
 
-<p>Jean Luc Mélanchon: </p>
-<img src="../images/jeanluc.png">
-<div name="response_gauche">{{content_gauche}}</div>
-<p>Marine Lepen:</p>
-<div name="responde_droite">{{content_droite}}</div>
+        <style>
+
+            .wrapper {
+              display: grid;
+              grid-template-columns: 33% 33% 33%;
+              text-align: center;
+            }
+
+            .response {
+
+                font-family: 'Roboto', sans-serif;
+                font-size: 2em;
+
+            }
+
+            .question {
+
+                margin-top: 50%;
+                margin-bottom: 50%
+
+
+            }
+
+            .droite {
+
+                background-color: #6b96cf;
+
+            }
+
+            .gauche {
+
+                background-color: #d66565;
+
+            }
+
+
+
+        </style>
+    </head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="droite">
+
+            <img src="/static/img/droite.png">
+            <div class="response">{{content_droite}}</div>
+
+        </div>
+
+
+        <div class="question">
+
+            <form action="/answer" method="POST">
+            <label for="keyword">Question</label>
+            <input type="text" name="question" placeholder="Question">
+            <button type="submit">Poser la question</button>
+            </form>
+
+        </div>
+
+        <div class="gauche">
+
+            <img src="/static/img/gauche.png">
+            <div class="response">{{content_gauche}}</div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+
