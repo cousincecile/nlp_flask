@@ -1,0 +1,44 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+  }
+
+  .response {
+
+      font-family: 'Roboto', sans-serif;
+      font-size: 2em;
+
+  }
+
+  .question {
+
+      margin-top: 50%;
+      margin-bottom: 50%
+
+
+  }
+
+  .droite {
+
+      background-color: #6b96cf;
+
+  }
+
+  .gauche {
+
+      background-color: #d66565;
+
+  }
+
+.align-middle {
+    display: flex;   
+    align-items: center;
+}
+
+.header{
+    padding: 10px;
+    text-align: center;
+    background-color: #00365A;
+    color: white;
+}
