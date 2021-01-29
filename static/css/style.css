@@ -42,3 +42,7 @@
     background-color: #00365A;
     color: white;
 }
+
+body{
+    background-image: linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)), url("/static/img/drapeau.png") no-repeat center center fixed;
+}

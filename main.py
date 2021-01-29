@@ -21,7 +21,7 @@ if __name__ == "__main__":
         answer = requests.get(BASE_URL + str(question)).text
         dictAnswer = json.loads(answer, strict=False)
 
-        return render_template("response.html", content_gauche=dictAnswer["gauche"], content_droite=dictAnswer["droite"])
+        return render_template("response.html", content_gauche=dictAnswer["gauche"], content_droite=dictAnswer["droite"], question=question)
 
 
 
